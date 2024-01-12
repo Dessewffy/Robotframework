@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.1.1 (Python 3.12.0 on win32)" generated="20240112 08:57:53.713" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Booking Windows, 10, Chrome, 116.0" source="C:\Users\benja\Documents\GitHub\test\hotel-v3 utility test\Booking.robot">
+<test id="s1-s1-t1" name="hotel-v3 guest login" line="10">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>http://hotel-v3.progmasters.hu</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 08:57:25.143" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<msg timestamp="20240112 08:57:25.495" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20240112 08:57:25.142" endtime="20240112 08:57:39.673"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240112 08:57:39.673" endtime="20240112 08:57:39.948"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:39.949" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20240112 08:57:39.948" endtime="20240112 08:57:40.311"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:40.312" level="INFO">Typing text 'hogap65094@zamaneta.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240112 08:57:40.311" endtime="20240112 08:57:40.814"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:40.815" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240112 08:57:40.814" endtime="20240112 08:57:41.196"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:41.197" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20240112 08:57:41.197" endtime="20240112 08:57:41.435"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240112 08:57:42.317" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240112 08:57:41.435" endtime="20240112 08:57:42.317"/>
+</kw>
+<status status="PASS" starttime="20240112 08:57:25.141" endtime="20240112 08:57:42.317"/>
+</test>
+<status status="PASS" starttime="20240112 08:57:25.079" endtime="20240112 08:57:43.246"/>
+</suite>
+<suite id="s1-s2" name="Booking OS X, Sonoma, Chrome, latest" source="C:\Users\benja\Documents\GitHub\test\hotel-v3 utility test\Booking.robot">
+<test id="s1-s2-t1" name="hotel-v3 guest login" line="10">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>http://hotel-v3.progmasters.hu</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 08:57:25.150" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<msg timestamp="20240112 08:57:25.504" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20240112 08:57:25.150" endtime="20240112 08:57:34.813"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240112 08:57:34.813" endtime="20240112 08:57:35.407"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:35.409" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20240112 08:57:35.408" endtime="20240112 08:57:35.604"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:35.605" level="INFO">Typing text 'hogap65094@zamaneta.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240112 08:57:35.604" endtime="20240112 08:57:35.846"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:35.847" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240112 08:57:35.846" endtime="20240112 08:57:36.060"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:36.061" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20240112 08:57:36.061" endtime="20240112 08:57:36.207"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240112 08:57:37.199" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="1-selenium-screenshot-1.png"&gt;&lt;img src="1-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240112 08:57:36.207" endtime="20240112 08:57:37.200"/>
+</kw>
+<status status="PASS" starttime="20240112 08:57:25.148" endtime="20240112 08:57:37.200"/>
+</test>
+<status status="PASS" starttime="20240112 08:57:25.086" endtime="20240112 08:57:37.761"/>
+</suite>
+<suite id="s1-s3" name="Booking Windows, 11, Firefox, latest-beta" source="C:\Users\benja\Documents\GitHub\test\hotel-v3 utility test\Booking.robot">
+<test id="s1-s3-t1" name="hotel-v3 guest login" line="10">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>http://hotel-v3.progmasters.hu</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 08:57:25.152" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<msg timestamp="20240112 08:57:25.504" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20240112 08:57:25.152" endtime="20240112 08:57:46.996"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240112 08:57:46.996" endtime="20240112 08:57:47.438"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:47.440" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20240112 08:57:47.438" endtime="20240112 08:57:47.889"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:47.891" level="INFO">Typing text 'hogap65094@zamaneta.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240112 08:57:47.890" endtime="20240112 08:57:48.236"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="password"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:48.238" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240112 08:57:48.237" endtime="20240112 08:57:48.546"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 08:57:48.547" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20240112 08:57:48.546" endtime="20240112 08:57:49.119"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240112 08:57:50.035" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="2-selenium-screenshot-1.png"&gt;&lt;img src="2-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240112 08:57:49.119" endtime="20240112 08:57:50.035"/>
+</kw>
+<status status="PASS" starttime="20240112 08:57:25.150" endtime="20240112 08:57:50.036"/>
+</test>
+<status status="PASS" starttime="20240112 08:57:25.087" endtime="20240112 08:57:50.635"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 3 executions.</doc>
+<status status="PASS" starttime="20240112 08:57:25.079" endtime="20240112 08:57:50.635"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Booking Windows, 10, Chrome, 116.0">Suites.Booking Windows, 10, Chrome, 116.0</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Booking OS X, Sonoma, Chrome, latest">Suites.Booking OS X, Sonoma, Chrome, latest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Booking Windows, 11, Firefox, latest-beta">Suites.Booking Windows, 11, Firefox, latest-beta</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.1.1 (Python 3.12.0 on win32)" generated="20231221 09:15:50.057" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\benja\Documents\GitHub\test">
+<suite id="s1-s1" name="Robot browserstack" source="C:\Users\benja\Documents\GitHub\test\Robot_browserstack">
+<suite id="s1-s1-s1" name="Hotel-V3" source="C:\Users\benja\Documents\GitHub\test\Robot_browserstack\hotel-v3.robot">
+<test id="s1-s1-s1-t1" name="Log into guest account" line="29">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://hotel-v3.progmasters.hu</arg>
+<arg>headlesschrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231221 09:15:11.794" level="INFO">Opening browser 'headlesschrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<status status="PASS" starttime="20231221 09:15:11.793" endtime="20231221 09:15:17.488"/>
+</kw>
+<kw name="Eyes Open" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Shared parameters section from `applitools.yaml` could be overwritten during `Eyes Open` call, see `Preconditions`.</doc>
+<status status="PASS" starttime="20231221 09:15:17.489" endtime="20231221 09:15:18.603"/>
+</kw>
+<status status="PASS" starttime="20231221 09:15:11.793" endtime="20231221 09:15:18.603"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231221 09:15:18.605" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20231221 09:15:18.604" endtime="20231221 09:15:18.689"/>
+</kw>
+<kw name="Eyes Check Window" library="EyesLibrary">
+<arg>Login Page</arg>
+<arg>Fully</arg>
+<tag>Allow to pass Check Settings keywords</tag>
+<tag>Check flow</tag>
+<doc>Check current browser window</doc>
+<kw name="Fully" library="EyesLibrary">
+<tag>Check Settings keyword</tag>
+<doc>Returns a CheckSettings object specified fully.</doc>
+<status status="PASS" starttime="20231221 09:15:18.690" endtime="20231221 09:15:18.690"/>
+</kw>
+<msg timestamp="20231221 09:15:50.051" level="INFO">Check result url: https://eyes.applitools.com/app/test-results/00000251699154271436/00000251699154271323/steps/1?accountId=V7npT6cXSkiKjY6yJ3CEwg__</msg>
+<status status="FAIL" starttime="20231221 09:15:18.690" endtime="20231221 09:15:19.536"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231221 09:15:19.538" level="INFO">Typing text 'hogap65094@zamaneta.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20231221 09:15:19.537" endtime="20231221 09:15:19.667"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231221 09:15:19.669" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20231221 09:15:19.668" endtime="20231221 09:15:19.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231221 09:15:19.777" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20231221 09:15:19.776" endtime="20231221 09:15:19.835"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231221 09:15:20.027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231221 09:15:19.837" endtime="20231221 09:15:20.027"/>
+</kw>
+<kw name="Eyes Check Window" library="EyesLibrary">
+<arg>Main Page</arg>
+<arg>Fully</arg>
+<arg>Match Level</arg>
+<arg>LAYOUT</arg>
+<tag>Allow to pass Check Settings keywords</tag>
+<tag>Check flow</tag>
+<doc>Check current browser window</doc>
+<kw name="Fully" library="EyesLibrary">
+<tag>Check Settings keyword</tag>
+<doc>Returns a CheckSettings object specified fully.</doc>
+<status status="PASS" starttime="20231221 09:15:20.029" endtime="20231221 09:15:20.030"/>
+</kw>
+<kw name="Match Level" library="EyesLibrary">
+<arg>LAYOUT</arg>
+<tag>Check Settings keyword</tag>
+<doc>Returns a CheckSettings object specified match level.</doc>
+<status status="PASS" starttime="20231221 09:15:20.030" endtime="20231221 09:15:20.031"/>
+</kw>
+<msg timestamp="20231221 09:15:50.051" level="INFO">Check result url: https://eyes.applitools.com/app/test-results/00000251699154271436/00000251699154271323/steps/2?accountId=V7npT6cXSkiKjY6yJ3CEwg__</msg>
+<status status="PASS" starttime="20231221 09:15:20.028" endtime="20231221 09:15:20.541"/>
+</kw>
+<kw name="Teardown" type="TEARDOWN">
+<kw name="Eyes Close Async" library="EyesLibrary">
+<tag>Check flow</tag>
+<doc>Closes a session and returns the results of the session.
+If a test is running, aborts it. Otherwise, does nothing.</doc>
+<status status="PASS" starttime="20231221 09:15:20.541" endtime="20231221 09:15:20.541"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20231221 09:15:20.541" endtime="20231221 09:15:26.746"/>
+</kw>
+<status status="PASS" starttime="20231221 09:15:20.541" endtime="20231221 09:15:26.746"/>
+</kw>
+<status status="FAIL" starttime="20231221 09:15:11.790" endtime="20231221 09:15:26.747"/>
+</test>
+<meta name="Applitools Test Results Url">https://eyes.applitools.com/app/batches/00000251699154271436/00000251699154271323?accountId=V7npT6cXSkiKjY6yJ3CEwg__</meta>
+<status status="FAIL" starttime="20231221 09:15:08.486" endtime="20231221 09:15:26.750"/>
+</suite>
+<status status="FAIL" starttime="20231221 09:15:08.483" endtime="20231221 09:15:26.753"/>
+</suite>
+<status status="FAIL" starttime="20231221 09:15:08.447" endtime="20231221 09:15:26.755"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Robot browserstack">Test.Robot browserstack</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Hotel-V3">Test.Robot browserstack.Hotel-V3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

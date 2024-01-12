@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240112 09:06:59.042" rpa="false" schemaversion="4">
+<suite id="s1" name="Robotframework" source="C:\Users\benja\Documents\GitHub\Robotframework">
+<suite id="s1-s1" name="Robot browserstack" source="C:\Users\benja\Documents\GitHub\Robotframework\Robot_browserstack">
+<suite id="s1-s1-s1" name="Hotel-V3" source="C:\Users\benja\Documents\GitHub\Robotframework\Robot_browserstack\hotel-v3.robot">
+<test id="s1-s1-s1-t1" name="Log into guest account" line="43">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 09:06:59.244" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<status status="PASS" starttime="20240112 09:06:59.244" endtime="20240112 09:07:04.354"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240112 09:07:04.354" endtime="20240112 09:07:04.473"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Hotel</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20240112 09:07:04.485" level="INFO">Page title is 'Hotel'.</msg>
+<status status="PASS" starttime="20240112 09:07:04.474" endtime="20240112 09:07:04.485"/>
+</kw>
+<status status="PASS" starttime="20240112 09:06:59.243" endtime="20240112 09:07:04.485"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:04.487" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20240112 09:07:04.486" endtime="20240112 09:07:04.593"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:04.595" level="INFO">Typing text 'hogap65094@zamaneta.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:04.595" endtime="20240112 09:07:04.795"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:04.796" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:04.795" endtime="20240112 09:07:04.911"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:04.912" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20240112 09:07:04.912" endtime="20240112 09:07:04.982"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240112 09:07:05.254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240112 09:07:04.983" endtime="20240112 09:07:05.255"/>
+</kw>
+<status status="PASS" starttime="20240112 09:06:59.242" endtime="20240112 09:07:05.256"/>
+</test>
+<test id="s1-s1-s1-t2" name="Log into owner account" line="58">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 09:07:05.260" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<status status="PASS" starttime="20240112 09:07:05.260" endtime="20240112 09:07:10.173"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240112 09:07:10.173" endtime="20240112 09:07:10.303"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Hotel</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20240112 09:07:10.315" level="INFO">Page title is 'Hotel'.</msg>
+<status status="PASS" starttime="20240112 09:07:10.304" endtime="20240112 09:07:10.315"/>
+</kw>
+<status status="PASS" starttime="20240112 09:07:05.259" endtime="20240112 09:07:10.316"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:10.317" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20240112 09:07:10.316" endtime="20240112 09:07:10.422"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-Owner}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:10.423" level="INFO">Typing text 'ribonot606@anawalls.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:10.422" endtime="20240112 09:07:10.628"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${Login-Credentials-Owner}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:10.629" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:10.629" endtime="20240112 09:07:10.740"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:10.741" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20240112 09:07:10.741" endtime="20240112 09:07:10.822"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240112 09:07:11.066" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240112 09:07:10.822" endtime="20240112 09:07:11.066"/>
+</kw>
+<status status="PASS" starttime="20240112 09:07:05.258" endtime="20240112 09:07:11.067"/>
+</test>
+<test id="s1-s1-s1-t3" name="Booking as guest" line="72">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 09:07:11.072" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<status status="PASS" starttime="20240112 09:07:11.071" endtime="20240112 09:07:15.993"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240112 09:07:15.993" endtime="20240112 09:07:16.115"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Hotel</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20240112 09:07:16.126" level="INFO">Page title is 'Hotel'.</msg>
+<status status="PASS" starttime="20240112 09:07:16.115" endtime="20240112 09:07:16.127"/>
+</kw>
+<status status="PASS" starttime="20240112 09:07:11.070" endtime="20240112 09:07:16.127"/>
+</kw>
+<kw name="Login_guest">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:16.130" level="INFO">Clicking element '//*[@id="navbar"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20240112 09:07:16.128" endtime="20240112 09:07:16.237"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="email"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:16.238" level="INFO">Typing text 'hogap65094@zamaneta.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:16.237" endtime="20240112 09:07:16.451"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${LOGIN-Credentials-GUEST}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:16.452" level="INFO">Typing text '1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:16.451" endtime="20240112 09:07:16.567"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="loginMember"]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:16.568" level="INFO">Clicking element '//*[@id="loginMember"]/div[3]/div/button'.</msg>
+<status status="PASS" starttime="20240112 09:07:16.568" endtime="20240112 09:07:16.638"/>
+</kw>
+<status status="PASS" starttime="20240112 09:07:16.127" endtime="20240112 09:07:16.638"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@class="btn btn-outline-primary btn-block"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:16.639" level="INFO">Clicking button '//*[@class="btn btn-outline-primary btn-block"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:16.638" endtime="20240112 09:07:16.751"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//a[@class='page-link']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240112 09:07:16.751" endtime="20240112 09:07:16.984"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${links}</var>
+<arg>//a[@class='page-link' and @style='cursor: pointer']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20240112 09:07:17.002" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="ceb9e976e4397758726bf2220a84b82c", element="F1B1FD8A6FB1A006B5B0510465A5054F_element_82")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement...</msg>
+<status status="PASS" starttime="20240112 09:07:16.984" endtime="20240112 09:07:17.002"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${random_link}</var>
+<arg>random.choice($links)</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240112 09:07:17.004" level="INFO">${random_link} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ceb9e976e4397758726bf2220a84b82c", element="F1B1FD8A6FB1A006B5B0510465A5054F_element_94")&gt;</msg>
+<status status="PASS" starttime="20240112 09:07:17.003" endtime="20240112 09:07:17.004"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${random_link}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240112 09:07:17.005" endtime="20240112 09:07:17.028"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${random_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:17.030" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="ceb9e976e4397758726bf2220a84b82c", element="F1B1FD8A6FB1A006B5B0510465A5054F_element_94")&gt;'.</msg>
+<status status="PASS" starttime="20240112 09:07:17.029" endtime="20240112 09:07:18.050"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[contains(text(), 'Megnézem')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240112 09:07:18.050" endtime="20240112 09:07:18.068"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//button[contains(text(), 'Megnézem')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240112 09:07:18.069" endtime="20240112 09:07:18.114"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${hotels}</var>
+<arg>//button[contains(text(), 'Megnézem')]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20240112 09:07:18.127" level="INFO">${hotels} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="ceb9e976e4397758726bf2220a84b82c", element="F1B1FD8A6FB1A006B5B0510465A5054F_element_112")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20240112 09:07:18.115" endtime="20240112 09:07:18.128"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${random_hotel}</var>
+<arg>random.choice($hotels)</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240112 09:07:18.129" level="INFO">${random_hotel} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ceb9e976e4397758726bf2220a84b82c", element="F1B1FD8A6FB1A006B5B0510465A5054F_element_113")&gt;</msg>
+<status status="PASS" starttime="20240112 09:07:18.129" endtime="20240112 09:07:18.130"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${random_hotel}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:18.132" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="ceb9e976e4397758726bf2220a84b82c", element="F1B1FD8A6FB1A006B5B0510465A5054F_element_113")&gt;'.</msg>
+<status status="PASS" starttime="20240112 09:07:18.131" endtime="20240112 09:07:18.197"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:numberOfGuests</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:18.198" level="INFO">Typing text '2' into text field 'id:numberOfGuests'.</msg>
+<status status="PASS" starttime="20240112 09:07:18.198" endtime="20240112 09:07:18.314"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@class="ng2-flatpickr-input flatpickr-input ng-star-inserted"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:18.315" level="INFO">Clicking element '//input[@class="ng2-flatpickr-input flatpickr-input ng-star-inserted"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:18.314" endtime="20240112 09:07:18.408"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_UP</arg>
+<arg>ARROW_RIGHT</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240112 09:07:18.409" level="INFO">Sending key(s) ('ARROW_UP', 'ARROW_RIGHT') to page.</msg>
+<msg timestamp="20240112 09:07:18.410" level="INFO">Pressing special key ARROW_UP to browser.</msg>
+<msg timestamp="20240112 09:07:18.411" level="INFO">Releasing special key ARROW_UP.</msg>
+<msg timestamp="20240112 09:07:18.425" level="INFO">Pressing special key ARROW_RIGHT to browser.</msg>
+<msg timestamp="20240112 09:07:18.426" level="INFO">Releasing special key ARROW_RIGHT.</msg>
+<status status="PASS" starttime="20240112 09:07:18.408" endtime="20240112 09:07:18.435"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240112 09:07:18.437" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20240112 09:07:18.437" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20240112 09:07:18.437" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20240112 09:07:18.436" endtime="20240112 09:07:18.454"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_UP</arg>
+<arg>ARROW_RIGHT</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240112 09:07:18.455" level="INFO">Sending key(s) ('ARROW_UP', 'ARROW_RIGHT') to page.</msg>
+<msg timestamp="20240112 09:07:18.456" level="INFO">Pressing special key ARROW_UP to browser.</msg>
+<msg timestamp="20240112 09:07:18.456" level="INFO">Releasing special key ARROW_UP.</msg>
+<msg timestamp="20240112 09:07:18.471" level="INFO">Pressing special key ARROW_RIGHT to browser.</msg>
+<msg timestamp="20240112 09:07:18.471" level="INFO">Releasing special key ARROW_RIGHT.</msg>
+<status status="PASS" starttime="20240112 09:07:18.454" endtime="20240112 09:07:18.485"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240112 09:07:18.486" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20240112 09:07:18.487" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20240112 09:07:18.487" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20240112 09:07:18.485" endtime="20240112 09:07:18.504"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240112 09:07:18.505" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20240112 09:07:18.505" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20240112 09:07:18.506" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20240112 09:07:18.504" endtime="20240112 09:07:18.517"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//input[@style="width: 18px; height: 18px; cursor: pointer"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240112 09:07:18.518" endtime="20240112 09:07:18.560"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//input[@style="width: 18px; height: 18px; cursor: pointer"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:18.562" level="INFO">Selecting checkbox '//input[@style="width: 18px; height: 18px; cursor: pointer"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:18.562" endtime="20240112 09:07:18.671"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class="btn btn-warning mr-4"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240112 09:07:18.672" level="INFO">Clicking button '//button[@class="btn btn-warning mr-4"]'.</msg>
+<status status="PASS" starttime="20240112 09:07:18.671" endtime="20240112 09:07:18.763"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@formcontrolname="aSZF"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20240112 09:07:23.955" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240112 09:07:23.956" level="FAIL">Element '//input[@formcontrolname="aSZF"]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20240112 09:07:18.763" endtime="20240112 09:07:23.962"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//input[@formcontrolname="aSZF"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240112 09:07:23.963" endtime="20240112 09:07:23.963"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class="btn btn-primary mr-4"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240112 09:07:23.964" endtime="20240112 09:07:23.965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class="modal-body"]/h5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20240112 09:07:23.965" endtime="20240112 09:07:23.965"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//div[@class="modal-body"]/h5</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20240112 09:07:23.966" endtime="20240112 09:07:23.966"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class="btn btn-primary mr-4"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240112 09:07:23.966" endtime="20240112 09:07:23.966"/>
+</kw>
+<status status="FAIL" starttime="20240112 09:07:11.068" endtime="20240112 09:07:23.967">Element '//input[@formcontrolname="aSZF"]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Delete of the Bookingsű" line="114">
+<kw name="Setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240112 09:07:23.971" level="INFO">Opening browser 'chrome' to base url 'http://hotel-v3.progmasters.hu'.</msg>
+<status status="PASS" starttime="20240112 09:07:23.971" endtime="20240112 09:07:27.224"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20240112 09:07:27.230" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00007FF779EC2142+3514994]
+	(No symbol) [0x00007FF779AE0CE2]
+	(No symbol) [0x00007FF7799876AA]
+	(No symbol) [0x00007FF779960AFD]
+	(No symbol) [0x00007FF7799FCB1B]
+	(No symbol) [0x00007FF779A1218F]
+	(No symbol) [0x00007FF7799F5D93]
+	(No symbol) [0x00007FF7799C4BDC]
+	(No symbol) [0x00007FF7799C5C64]
+	GetHandleVerifier [0x00007FF779EEE16B+3695259]
+	GetHandleVerifier [0x00007FF779F46737+4057191]
+	GetHandleVerifier [0x00007FF779F3E4E3+4023827]
+	GetHandleVerifier [0x00007FF779C104F9+689705]
+	(No symbol) [0x00007FF779AEC048]
+	(No symbol) [0x00007FF779AE8044]
+	(No symbol) [0x00007FF779AE81C9]
+	(No symbol) [0x00007FF779AD88C4]
+	BaseThreadInitThunk [0x00007FFE89B5257D+29]
+	RtlUserThreadStart [0x00007FFE8AACAA58+40]
+</msg>
+<msg timestamp="20240112 09:07:27.237" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00007FF779EC2142+3514994]
+	(No symbol) [0x00007FF779AE0CE2]
+	(No symbol) [0x00007FF7799876AA]
+	(No symbol) [0x00007FF779960AFD]
+	(No symbol) [0x00007FF7799FCB1B]
+	(No symbol) [0x00007FF779A1218F]
+	(No symbol) [0x00007FF7799F5D93]
+	(No symbol) [0x00007FF7799C4BDC]
+	(No symbol) [0x00007FF7799C5C64]
+	GetHandleVerifier [0x00007FF779EEE16B+3695259]
+	GetHandleVerifier [0x00007FF779F46737+4057191]
+	GetHandleVerifier [0x00007FF779F3E4E3+4023827]
+	GetHandleVerifier [0x00007FF779C104F9+689705]
+	(No symbol) [0x00007FF779AEC048]
+	(No symbol) [0x00007FF779AE8044]
+	(No symbol) [0x00007FF779AE81C9]
+	(No symbol) [0x00007FF779AD88C4]
+	BaseThreadInitThunk [0x00007FFE89B5257D+29]
+	RtlUserThreadStart [0x00007FFE8AACAA58+40]
+</msg>
+<status status="FAIL" starttime="20240112 09:07:27.224" endtime="20240112 09:07:27.242"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Hotel</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20240112 09:07:27.242" endtime="20240112 09:07:27.243"/>
+</kw>
+<status status="FAIL" starttime="20240112 09:07:23.970" endtime="20240112 09:07:27.243"/>
+</kw>
+<status status="FAIL" starttime="20240112 09:07:23.969" endtime="20240112 09:07:27.243">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00007FF779EC2142+3514994]
+	(No symbol) [0x00007FF779AE0CE2]
+	(No symbol) [0x00007FF7799876AA]
+	(No symbol) [0x00007FF779960AFD]
+	(No symbol) [0x00007FF7799FCB1B]
+	(No symbol) [0x00007FF779A1218F]
+	(No symbol) [0x00007FF7799F5D93]
+	(No symbol) [0x00007FF7799C4BDC]
+	(No symbol) [0x00007FF7799C5C64]
+	GetHandleVerifier [0x00007FF779EEE16B+3695259]
+	GetHandleVerifier [0x00007FF779F46737+4057191]
+	GetHandleVerifier [0x00007FF779F3E4E3+4023827]
+	GetHandleVerifier [0x00007FF779C104F9+689705]
+	(No symbol) [0x00007FF779AEC048]
+	(No symbol) [0x00007FF779AE8044]
+	(No symbol) [0x00007FF779AE81C9]
+	(No symbol) [0x00007FF779AD88C4]
+	BaseThreadInitThunk [0x00007FFE89B5257D+29]
+	RtlUserThreadStart [0x00007FFE8AACAA58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20240112 09:06:59.079" endtime="20240112 09:07:27.249"/>
+</suite>
+<status status="FAIL" starttime="20240112 09:06:59.077" endtime="20240112 09:07:27.254"/>
+</suite>
+<status status="FAIL" starttime="20240112 09:06:59.053" endtime="20240112 09:07:27.260"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="2" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="2" fail="2" skip="0" id="s1-s1" name="Robot browserstack">Robotframework.Robot browserstack</stat>
+<stat pass="2" fail="2" skip="0" id="s1-s1-s1" name="Hotel-V3">Robotframework.Robot browserstack.Hotel-V3</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240112 09:07:27.230" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00007FF779EC2142+3514994]
+	(No symbol) [0x00007FF779AE0CE2]
+	(No symbol) [0x00007FF7799876AA]
+	(No symbol) [0x00007FF779960AFD]
+	(No symbol) [0x00007FF7799FCB1B]
+	(No symbol) [0x00007FF779A1218F]
+	(No symbol) [0x00007FF7799F5D93]
+	(No symbol) [0x00007FF7799C4BDC]
+	(No symbol) [0x00007FF7799C5C64]
+	GetHandleVerifier [0x00007FF779EEE16B+3695259]
+	GetHandleVerifier [0x00007FF779F46737+4057191]
+	GetHandleVerifier [0x00007FF779F3E4E3+4023827]
+	GetHandleVerifier [0x00007FF779C104F9+689705]
+	(No symbol) [0x00007FF779AEC048]
+	(No symbol) [0x00007FF779AE8044]
+	(No symbol) [0x00007FF779AE81C9]
+	(No symbol) [0x00007FF779AD88C4]
+	BaseThreadInitThunk [0x00007FFE89B5257D+29]
+	RtlUserThreadStart [0x00007FFE8AACAA58+40]
+</msg>
+</errors>
+</robot>

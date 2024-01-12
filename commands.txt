@@ -1,0 +1,3 @@
+npx cypress open = cypress megnyitása
+
+browserstack-sdk robot test (vagy esetleg a lokáció~path)
