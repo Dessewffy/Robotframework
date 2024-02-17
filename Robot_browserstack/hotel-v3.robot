@@ -111,7 +111,7 @@ Booking as guest
     # Finalising of booking
     Click Button    //button[@class="btn btn-primary mr-4"]
 
-Delete of the Bookingsű
+Delete of the Bookings
     #Earlier determined
     Login_guest
 
